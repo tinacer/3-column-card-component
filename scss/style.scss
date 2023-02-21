@@ -1,0 +1,149 @@
+//column colors
+$c-primary-column-1:hsl(31, 77%, 52%);
+$c-primary-column-2:hsl(184, 100%, 22%);
+$c-primary-column-3:hsl(179, 100%, 13%);
+
+$c-paragraphs: hsla(0, 0%, 100%, 0.75);
+$c-neutral:hsl(0, 0%, 95%);
+
+//text
+$text-body: 15px;
+$text-header: 'Big Shoulders Display', cursive; 
+$text-default: 'Lexend Deca', sans-serif;
+
+//spacer
+$column-spacer:30px;
+
+
+
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+ /*
+ breakpoints
+ mobile 0px - 1439px
+ desktop 1440px and more
+*/
+
+body {
+    font-family: $text-default;
+    font-size: $text-body;
+    line-height: 1.5;
+    color: $c-paragraphs;
+}
+
+//mobile first max. width 1439px
+
+.header {
+    font-family: $text-header;
+    color: $c-neutral;
+    font-size: 200%;
+    text-transform: uppercase;
+    margin: 10px 0 10px 0;
+ }
+
+ p {
+    margin: 0;
+ }
+
+ //buttons setup
+
+ .card-button {
+    display: inline-block;
+    background-color: $c-neutral;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: $column-spacer;
+
+    &:hover,
+    &:focus {
+        border: 1px solid $c-neutral;
+    }
+ }
+
+ .button {
+    color: $c-neutral;
+    text-decoration: none;
+    
+    &:hover,
+    &:focus {
+        color: $c-neutral;
+    }
+ 
+ }
+
+ .column-1__button {
+
+    &:hover,
+    &:focus {
+        background-color: $c-primary-column-1;
+    }
+
+        &--normal {
+            color: $c-primary-column-1;
+        }
+}
+
+.column-2__button {
+
+    &:hover,
+    &:focus {
+        background-color: $c-primary-column-2;
+    }
+
+        &--normal {
+            color: $c-primary-column-2;
+        }
+
+}
+
+
+ .column-3__button {
+
+    &:hover,
+    &:focus {
+        background-color: $c-primary-column-3;
+    }
+
+        &--normal {
+            color: $c-primary-column-3;
+        }
+ }
+
+// columns
+
+.wrapper-columns {
+    margin: 100px auto 10px auto;
+    max-width: 375px;
+}
+    
+.column-1 {
+    background-color: $c-primary-column-1;
+    padding: $column-spacer;
+    border-radius: 10px 10px 0 0;
+}
+
+.column-2 {
+    background-color: $c-primary-column-2;
+    padding: $column-spacer;
+}
+
+.column-3 {
+    background-color: $c-primary-column-3;
+    padding: $column-spacer;
+    border-radius: 0 0 10px 10px;
+}
+
+
+//footer
+.attribution {
+    color: $c-primary-column-3;
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a {
+    color: $c-primary-column-2;
+    text-decoration: none;
+}
+
