@@ -30,55 +30,65 @@ p {
   margin: 0;
 }
 
-.card-button {
+.button {
   display: inline-block;
   background-color: hsl(0deg, 0%, 95%);
+  text-decoration: none;
   padding: 10px;
   border-radius: 20px;
   margin-top: 30px;
 }
-.card-button:hover, .card-button:focus {
-  border: 1px solid hsl(0deg, 0%, 95%);
-}
-
-.button {
-  color: hsl(0deg, 0%, 95%);
-  text-decoration: none;
-}
 .button:hover, .button:focus {
   color: hsl(0deg, 0%, 95%);
+  border: 1px solid hsl(0deg, 0%, 95%);
+}
+@media screen and (min-width: 1440px) {
+  .button {
+    margin-top: 90px;
+  }
 }
 
-.column-1__button:hover, .column-1__button:focus {
-  background-color: hsl(31deg, 77%, 52%);
-}
 .column-1__button--normal {
   color: hsl(31deg, 77%, 52%);
 }
-
-.column-2__button:hover, .column-2__button:focus {
-  background-color: hsl(184deg, 100%, 22%);
+.column-1__button--normal:hover, .column-1__button--normal:focus {
+  background-color: hsl(31deg, 77%, 52%);
 }
+
 .column-2__button--normal {
   color: hsl(184deg, 100%, 22%);
 }
-
-.column-3__button:hover, .column-3__button:focus {
-  background-color: hsl(179deg, 100%, 13%);
+.column-2__button--normal:hover, .column-2__button--normal:focus {
+  background-color: hsl(184deg, 100%, 22%);
 }
+
 .column-3__button--normal {
   color: hsl(179deg, 100%, 13%);
+}
+.column-3__button--normal:hover, .column-3__button--normal:focus {
+  background-color: hsl(179deg, 100%, 13%);
 }
 
 .wrapper-columns {
   margin: 100px auto 10px auto;
   max-width: 375px;
 }
+@media screen and (min-width: 1440px) {
+  .wrapper-columns {
+    display: flex;
+    max-width: 55%;
+  }
+}
 
 .column-1 {
   background-color: hsl(31deg, 77%, 52%);
   padding: 30px;
   border-radius: 10px 10px 0 0;
+}
+@media screen and (min-width: 1440px) {
+  .column-1 {
+    border-radius: 10px 0 0 10px;
+  }
 }
 
 .column-2 {
@@ -90,6 +100,11 @@ p {
   background-color: hsl(179deg, 100%, 13%);
   padding: 30px;
   border-radius: 0 0 10px 10px;
+}
+@media screen and (min-width: 1440px) {
+  .column-3 {
+    border-radius: 0 10px 10px 0;
+  }
 }
 
 .attribution {

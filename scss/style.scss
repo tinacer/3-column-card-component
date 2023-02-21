@@ -14,7 +14,7 @@ $text-default: 'Lexend Deca', sans-serif;
 //spacer
 $column-spacer:30px;
 
-
+//main section of project
 
 html { box-sizing: border-box; }
 *, ::before, ::after { box-sizing: inherit; }
@@ -48,66 +48,52 @@ body {
 
  //buttons setup
 
- .card-button {
+ .button {
     display: inline-block;
     background-color: $c-neutral;
+    text-decoration: none;
     padding: 10px;
     border-radius: 20px;
     margin-top: $column-spacer;
-
-    &:hover,
-    &:focus {
-        border: 1px solid $c-neutral;
-    }
- }
-
- .button {
-    color: $c-neutral;
-    text-decoration: none;
     
     &:hover,
     &:focus {
         color: $c-neutral;
+        border: 1px solid $c-neutral;
     }
  
+    @media screen and (min-width: 1440px) {
+        margin-top: $column-spacer * 3;
+    }
  }
 
- .column-1__button {
+ .column-1__button--normal {
+    color: $c-primary-column-1;
 
     &:hover,
     &:focus {
         background-color: $c-primary-column-1;
     }
+ }
 
-        &--normal {
-            color: $c-primary-column-1;
-        }
-}
-
-.column-2__button {
+.column-2__button--normal {
+    color: $c-primary-column-2;
 
     &:hover,
     &:focus {
         background-color: $c-primary-column-2;
     }
 
-        &--normal {
-            color: $c-primary-column-2;
-        }
-
 }
 
-
- .column-3__button {
+ .column-3__button--normal {
+    color: $c-primary-column-3;
 
     &:hover,
     &:focus {
         background-color: $c-primary-column-3;
     }
 
-        &--normal {
-            color: $c-primary-column-3;
-        }
  }
 
 // columns
@@ -115,12 +101,21 @@ body {
 .wrapper-columns {
     margin: 100px auto 10px auto;
     max-width: 375px;
+
+    @media screen and (min-width: 1440px) {
+        display: flex;
+        max-width: 55%; 
+    }
 }
     
 .column-1 {
     background-color: $c-primary-column-1;
     padding: $column-spacer;
     border-radius: 10px 10px 0 0;
+
+    @media screen and (min-width: 1440px) {
+        border-radius: 10px 0 0 10px;
+    }
 }
 
 .column-2 {
@@ -132,6 +127,10 @@ body {
     background-color: $c-primary-column-3;
     padding: $column-spacer;
     border-radius: 0 0 10px 10px;
+
+    @media screen and (min-width: 1440px) {
+        border-radius: 0 10px 10px 0;
+    }
 }
 
 
@@ -145,5 +144,5 @@ body {
 .attribution a {
     color: $c-primary-column-2;
     text-decoration: none;
-}
+} 
 
