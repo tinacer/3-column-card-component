@@ -12,7 +12,7 @@ $text-header: 'Big Shoulders Display', cursive;
 $text-default: 'Lexend Deca', sans-serif;
 
 //spacer
-$column-spacer:30px;
+$column-spacer:40px;
 
 //main section of project
 
@@ -26,6 +26,7 @@ html { box-sizing: border-box; }
 */
 
 body {
+    background-color: $c-neutral;
     font-family: $text-default;
     font-size: $text-body;
     line-height: 1.5;
@@ -99,12 +100,15 @@ body {
 // columns
 
 .wrapper-columns {
-    margin: 100px auto 10px auto;
+    margin: 0 auto 10px auto;
     max-width: 375px;
 
     @media screen and (min-width: 1440px) {
         display: flex;
-        max-width: 55%; 
+        max-width: 70%;
+        height: 600px;
+        margin-top: 10%;
+        font-size: 140%;
     }
 }
     
@@ -136,6 +140,7 @@ body {
 
 //footer
 .attribution {
+    visibility: hidden;
     color: $c-primary-column-3;
     font-size: 11px; 
     text-align: center; 

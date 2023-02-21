@@ -12,6 +12,7 @@ html {
  desktop 1440px and more
 */
 body {
+  background-color: hsl(0deg, 0%, 95%);
   font-family: "Lexend Deca", sans-serif;
   font-size: 15px;
   line-height: 1.5;
@@ -36,7 +37,7 @@ p {
   text-decoration: none;
   padding: 10px;
   border-radius: 20px;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 .button:hover, .button:focus {
   color: hsl(0deg, 0%, 95%);
@@ -44,7 +45,7 @@ p {
 }
 @media screen and (min-width: 1440px) {
   .button {
-    margin-top: 90px;
+    margin-top: 120px;
   }
 }
 
@@ -70,19 +71,22 @@ p {
 }
 
 .wrapper-columns {
-  margin: 100px auto 10px auto;
+  margin: 0 auto 10px auto;
   max-width: 375px;
 }
 @media screen and (min-width: 1440px) {
   .wrapper-columns {
     display: flex;
-    max-width: 55%;
+    max-width: 70%;
+    height: 600px;
+    margin-top: 10%;
+    font-size: 140%;
   }
 }
 
 .column-1 {
   background-color: hsl(31deg, 77%, 52%);
-  padding: 30px;
+  padding: 40px;
   border-radius: 10px 10px 0 0;
 }
 @media screen and (min-width: 1440px) {
@@ -93,12 +97,12 @@ p {
 
 .column-2 {
   background-color: hsl(184deg, 100%, 22%);
-  padding: 30px;
+  padding: 40px;
 }
 
 .column-3 {
   background-color: hsl(179deg, 100%, 13%);
-  padding: 30px;
+  padding: 40px;
   border-radius: 0 0 10px 10px;
 }
 @media screen and (min-width: 1440px) {
@@ -108,6 +112,7 @@ p {
 }
 
 .attribution {
+  visibility: hidden;
   color: hsl(179deg, 100%, 13%);
   font-size: 11px;
   text-align: center;
