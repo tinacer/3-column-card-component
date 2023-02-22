@@ -4,7 +4,7 @@ $c-primary-column-2:hsl(184, 100%, 22%);
 $c-primary-column-3:hsl(179, 100%, 13%);
 
 $c-paragraphs: hsla(0, 0%, 100%, 0.75);
-$c-neutral:hsl(0, 0%, 95%);
+$c-neutral:hsl(0deg, 0%, 95%);
 
 //text
 $text-body: 15px;
@@ -26,6 +26,10 @@ html { box-sizing: border-box; }
 */
 
 body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: $c-neutral;
     font-family: $text-default;
     font-size: $text-body;
@@ -106,15 +110,13 @@ body {
 // columns
 
 .wrapper-columns {
-    margin: 0 auto 10px auto;
     max-width: 375px;
 
     @media screen and (min-width: 1440px) {
         display: flex;
         max-width: 70%;
         height: 550px;
-        margin-top: 10%;
-        font-size: 140%;
+        font-size: 130%;
     }
 }
 

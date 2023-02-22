@@ -12,6 +12,10 @@ html {
  desktop 1440px and more
 */
 body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: hsl(0deg, 0%, 95%);
   font-family: "Lexend Deca", sans-serif;
   font-size: 15px;
@@ -77,7 +81,6 @@ p {
 }
 
 .wrapper-columns {
-  margin: 0 auto 10px auto;
   max-width: 375px;
 }
 @media screen and (min-width: 1440px) {
@@ -85,8 +88,7 @@ p {
     display: flex;
     max-width: 70%;
     height: 550px;
-    margin-top: 10%;
-    font-size: 140%;
+    font-size: 130%;
   }
 }
 
